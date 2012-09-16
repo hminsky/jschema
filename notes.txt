@@ -1,0 +1,2 @@
++ adding local library to dependencies
+http://pragmatastic.blogspot.com/2010/07/adding-project-local-libraries-to-maven.html
