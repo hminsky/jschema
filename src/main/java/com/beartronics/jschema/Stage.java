@@ -18,6 +18,10 @@ public class Stage
     int nactions = 10;
     int nschemas = 10;
 
+    public Stage() {
+
+    }
+
     public void initWorld(int n) {
         System.out.println("initializing world "+ this);
     }
