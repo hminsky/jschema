@@ -3,33 +3,33 @@ package com.beartronics.jschema;
 import java.util.Iterator;
 import java.util.List;
 
-public class Input {
+public class Item {
     String name;
     float  value;
     int    index;
-    InputType type;
+    ItemType type;
 
-    public static enum InputType {
+    public static enum ItemType {
         PRIMITIVE, SYNTHETIC
     }
 
 
-    Input(String name, int index, float value, InputType type) {
+    Item(String name, int index, float value, ItemType type) {
         this.name = name;
         this.index = index;
         this.value = value;
         this.type = type;
     }
 
-    Input(String name, int index, float value) {
+    Item(String name, int index, float value) {
         this.name = name;
         this.index = index;
         this.value = value;
-        this.type = InputType.PRIMITIVE;
+        this.type = ItemType.PRIMITIVE;
     }
 
     public String toString() {
-        return "[Input"+index+" "+name+": "+value+"]";
+        return "[Item"+index+" "+name+": "+value+"]";
     }
 
 }

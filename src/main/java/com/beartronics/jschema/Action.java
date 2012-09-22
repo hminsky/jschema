@@ -6,13 +6,14 @@ import java.util.List;
 public class Action {
 
     public static enum ActionType {
-        PRIMITIVE, COMPOUND
+        PRIMITIVE,
+        COMPOUND
     }
 
-    String name;
-    int index;
-    float value;
-    ActionType type;
+    String      name;
+    int         index;
+    float       value;
+    ActionType  type;
 
     public Action(String name, int index) {
         this.name = name;

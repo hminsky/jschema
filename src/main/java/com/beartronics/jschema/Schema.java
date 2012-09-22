@@ -5,15 +5,16 @@ import gnu.trove.list.array.TIntArrayList;
 
 import java.util.Iterator;
 import java.util.List;
+import java.util.ArrayList;
 
 public class Schema {
+    // Numerical id of this schema
+    int id = 0;
     
-    // How do we handle 'override' ? An item in some state in the extended context is causing the schema
-    // to be unreliable. How do we detect that?
-
-
+    // The items in this schema's context list
     TIntArrayList posContext = new TIntArrayList();
     TIntArrayList negContext = new TIntArrayList();
+    // The items in this schema's result list
     TIntArrayList posResult  = new TIntArrayList();
     TIntArrayList negResult  = new TIntArrayList();
 
@@ -21,6 +22,11 @@ public class Schema {
     int succeededWithActivation   = 0;
     int failedWithActivation      = 0; // number of times activation failed
     int succededWithoutActivation = 0;
+
+    // Parent schema from which we were spun off
+    Schema parent = null;
+    // List of child schemas which we have spun off
+    ArrayList children = new ArrayList();
 
     boolean applicable = false;
     float value = 0;
@@ -53,16 +59,18 @@ public class Schema {
     TIntArrayList XRremainNegWithAction = new TIntArrayList();
     TIntArrayList XRremainNegWithoutAction = new TIntArrayList();
 
-    // Override items;
-    // if val == 1, overrides from item positive val
-    // if val == -1, overrides with item negative val
-    TIntArrayList XOverride = new TIntArrayList();    
-
+    // List of schemas who override this schema;
+    TIntArrayList XOverride = new TIntArrayList();
 
     Action action = null;
 
     public Schema(Action action) {
         this.action = action;
+    }
+
+    // Initialize this schema, for this stage
+    public void initialize(Stage stage) {
+        
     }
 
     public String toString() {
