@@ -64,12 +64,14 @@ public class Schema {
 
     Action action = null;
 
-    public Schema(Action action) {
+    public Schema(int index, Action action) {
+        this.id = index;
         this.action = action;
     }
 
     // Initialize this schema, for this stage
     public void initialize(Stage stage) {
+        // create extended context, result arrays
         
     }
 

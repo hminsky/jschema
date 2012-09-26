@@ -10,8 +10,8 @@ public class SchemaTest extends TestCase {
     }
 
     public void testCreate() throws Exception {
-        Schema s = new Schema(null);
-        s.id = 259;
+        Action a = new Action("testaction", 0);
+        Schema s = new Schema(259, a);
         assertEquals( 259 , s.id );
     }
 }

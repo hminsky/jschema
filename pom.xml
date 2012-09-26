@@ -23,7 +23,7 @@
         <configuration>
           <archive>
             <manifest>
-              <mainClass>com.mycompany.mypackage.MyMainClass</mainClass>
+              <mainClass>com.beartronics.jschema.App</mainClass>
             </manifest>
           </archive>
         </configuration>

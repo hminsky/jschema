@@ -22,7 +22,7 @@
     <property name="basedir" value="/Users/hqm/src/jschema"/>
     <property name="java.endorsed.dirs" value="/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Home/lib/endorsed"/>
     <property name="os.arch" value="x86_64"/>
-    <property name="surefire.real.class.path" value="/Users/hqm/src/jschema/target/surefire/surefirebooter3659591182802984280.jar"/>
+    <property name="surefire.real.class.path" value="/Users/hqm/src/jschema/target/surefire/surefirebooter5937134322992963217.jar"/>
     <property name="java.io.tmpdir" value="/var/folders/qp/wbv_m3mn04j3wmkjc_xb_20r0000gn/T/"/>
     <property name="line.separator" value="
 "/>
@@ -46,7 +46,7 @@
     <property name="java.vm.specification.version" value="1.0"/>
     <property name="sun.arch.data.model" value="64"/>
     <property name="java.home" value="/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Home"/>
-    <property name="sun.java.command" value="/Users/hqm/src/jschema/target/surefire/surefirebooter3659591182802984280.jar /Users/hqm/src/jschema/target/surefire/surefire25397899936255399tmp /Users/hqm/src/jschema/target/surefire/surefire8053860037151959700tmp"/>
+    <property name="sun.java.command" value="/Users/hqm/src/jschema/target/surefire/surefirebooter5937134322992963217.jar /Users/hqm/src/jschema/target/surefire/surefire5744103648336126914tmp /Users/hqm/src/jschema/target/surefire/surefire7860714760293234983tmp"/>
     <property name="java.specification.vendor" value="Sun Microsystems Inc."/>
     <property name="user.language" value="en"/>
     <property name="awt.toolkit" value="apple.awt.CToolkit"/>
@@ -65,5 +65,5 @@
     <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
     <property name="sun.cpu.isalist" value=""/>
   </properties>
-  <testcase time="0.002" classname="com.beartronics.jschema.AppTest" name="testApp"/>
+  <testcase time="0.001" classname="com.beartronics.jschema.AppTest" name="testApp"/>
 </testsuite>
