@@ -26,7 +26,7 @@ public class Schema {
     // Parent schema from which we were spun off
     Schema parent = null;
     // List of child schemas which we have spun off
-    ArrayList children = new ArrayList();
+    ArrayList<Schema> children = new ArrayList<Schema>();
 
     boolean applicable = false;
     float value = 0;

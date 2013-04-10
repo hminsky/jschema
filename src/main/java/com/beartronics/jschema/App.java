@@ -29,6 +29,8 @@ public class App
         System.out.println("The setting 'foo' is: " + config.getString("foo"));
         System.out.println("The setting 'bar' is: " + config.getString("bar"));
         System.out.println( "creating schemas" );
+        System.out.println( "Boo, Bear" );
+
         stage = new Stage();
 
         stage.initWorld(n);
